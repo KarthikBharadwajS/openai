@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Chat GPT</title>
+    <base href="/test/openai/">
+    <script src="script.js"></script>
+</head>
+
+<body onload="OnLoad()">
+
+    <div id="idContainer">
+        <div>
+            <button type="button" onclick="Send()" id="btnSend" disabled>Send</button>
+            <button type="button" onclick="Reset()" id="btnReset" disabled>Reset</button>
+
+
+            <select id="selModel">
+                <option value="text-davinci-003">text-davinci-003</option>
+                <option value="text-davinci-002">text-davinci-002</option>
+                <option value="code-davinci-002">code-davinci-002</option>
+            </select>
+        </div>
+
+        <textarea id="txtMsg" rows="25" wrap="soft" style="width: 98%; 
+        margin-left: 3px; margin-top: 6px" placeholder="topic"></textarea>
+
+        <div id="idText"></div>
+    </div>
+
+    <div id="images"></div>
+</body>
+
+</html>
